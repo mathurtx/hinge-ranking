@@ -12,7 +12,7 @@ Models is where all the models are saved.
 - What are some of the most important features, and why did you choose the model you did?
 Used Logistic Regression as the baseline model. It is the most simple & elegant first model that gives good performance. Performed grid search cross-validation with L1 & L2 penalty. Also, we used PCA and SVD for finding the features that provide the maximum variance in a particular dimension.
 - Logistic Regression - Using 29 features gave the best results as shown in the logistic regression grid search
-- XgBoost: Logistic Regression - 
+- XgBoost: Logistic Regression - Can be seen in the XGBoost feature importance graph
 - Why did you choose the evaluation metrics that you did? For our use case, which should be considered most heavily in making business decisions? 
 Used F1 weighted for scoring since there is an imbalance in the dataset. Can use F1 weighted or AUC of Precision Recall curve to evaluate the performance.
 The problem can be stated as a ranking problem if the users are served N recommendations. MAP or NDCG can be effective measure to measure ranking.
@@ -22,4 +22,8 @@ Matrix Factoring to find latent vectors for different players and subjects. Use 
 Social network data can be used to find more meaningful matches. With the social network data we can perform some natural language processing to understand the players likes & preferences.
 In addition, we can use the pictures from the application to understand what kind of images get the most likes.
 Models can be evaluated using cross-validation.
+
+
+- Results:
+XGBoost performed best. The results can be seen in the notebooks.
 
